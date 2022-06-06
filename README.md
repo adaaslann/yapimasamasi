@@ -1,0 +1,1 @@
+yapim asamasi sayfası ornek
