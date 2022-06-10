@@ -140,30 +140,30 @@ body {
   color: #222;
   padding: 0;
   background: url("img/1.jpeg") no-repeat top center fixed;
-  background-size: contain;
+  background-size: cover;
   height: 100%;
 }
 
 #container {
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #headline-container {
   margin: 0 auto;
   text-align: center;
-  position: relative;
-  top: 50%;
 }
 
 .headline {
   font-size: 60px;
   color: #fff;
   font-weight: bold;
-
-  display: center;
+  display: flex;
   align-items: center;
-  justify-content: center;
+  padding: 10px 20px;
 }
 
 #first-head {
@@ -171,32 +171,94 @@ body {
 }
 
 #second-head {
-  margin-right: -400px;
+  margin-right: -200px;
+}
+
+#try-demo {
+  float: right;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.button-bg-transparent {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  width: 150px;
+  padding: 20px 5px;
+}
+
+#try-demo .button-bg-transparent {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.button-bg-transparent button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 header {
-  text-align: center;
-  position: relative;
-  margin-right: -800px;
-  top: 2%;
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  padding: 20px 15px;
-  border: 1px solid red;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#social-links {
-  margin-left: 500px;
+#social-links img {
+  height: 30px;
+  width: 30px;
+  padding: 7px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 40px;
 }
 
 #subscription {
-  margin-left: 900px;
+}
+
+#subscription span {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 10px;
+  display: block;
+}
+
+#subsribe-container {
+  position: relative;
+}
+#subsribe-container input {
+  outline: none;
+  border: 1px #ccc solid;
+  border-radius: 48px;
+  padding: 4px 30px;
+  height: 40px;
+  width: 80%;
+}
+
+#subsribe-container button {
+  outline: none;
+  border: 1px solid #222;
+  background-color: #222;
+  border-radius: 48px;
+  padding: 10px 30px;
+  color: rgb(139, 136, 136);
+  position: absolute;
+  top: 6px;
+  right: 4px;
+}
+
+#subsribe-container {
 }
 
 #copyright {
-  margin-left: 1300px;
+  color: rgb(207, 205, 205);
+  font-size: 12px;
 }
